@@ -1,8 +1,8 @@
 n= int(input())
 
-for i in range(n,1,-1):
-    for j in range(n):
-        for k in range(n,1,-1):
-            print("*",end = "")
-        print("",end=" ")
+for i in range(n, 0, -1):
+    for j in range(i,0,-1):
+        for k in range(i):
+            print("*",end="")
+        print(" ",end="")
     print()
