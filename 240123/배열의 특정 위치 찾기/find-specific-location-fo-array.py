@@ -1,10 +1,6 @@
 arr = list(map(int, input().split()))
-sum1=0
-sum2=0
-for i in range(0,10,2):
-    sum1+=arr[i]
+sum1=arr[1]+arr[3]+arr[5]+arr[7]+arr[9]
+avg2=(arr[2]+arr[5]+arr[8])/3
 
-for i in range(0,10,3):
-    sum2 +=arr[i]
 
-print('{0} {1:.1f}'.format(sum1 ,sum2/3))
+print('{0} {1:.1f}'.format(sum1 ,avg2))
