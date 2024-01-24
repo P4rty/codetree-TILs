@@ -1,5 +1,5 @@
 a = list(map(int,input().split()))
-cnt = [0]*11
+cnt = [0]*10
 for elem in a:
     elem = elem//10
     cnt[elem-1] +=1
