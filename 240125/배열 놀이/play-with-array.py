@@ -1,4 +1,5 @@
 n,q = map(int,input().split())
+arr = [0]*n
 arr = list(map(int,input().split()))
 for i in range(q):
     quest = []
