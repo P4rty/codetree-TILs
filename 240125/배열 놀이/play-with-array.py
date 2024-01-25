@@ -13,5 +13,5 @@ for i in range(q):
         else:
             print(arr.index(quest[1])+1)
     elif quest[0] == 3:
-        for j in range(quest[1]-1,quest[2]):
+        for j in range(quest[1]-1,quest[1]+1):
             print(arr[j],end= " ")
