@@ -1,0 +1,5 @@
+n = int (input())
+arr = list(map(int,input().split()))
+check = min(arr)
+cnt = arr.count(check)
+print(f'{check} {cnt}')
