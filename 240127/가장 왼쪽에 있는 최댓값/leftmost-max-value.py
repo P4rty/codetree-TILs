@@ -1,7 +1,7 @@
 n = int(input())
 arr = list(map(int, input().split()))
 while True:
-    if len(arr) !=1:
+    if len(arr) !=0:
         a = max(arr)
         b = arr.index(a)
     print(b + 1, end=" ")
