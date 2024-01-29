@@ -10,5 +10,9 @@ for i in range(len(a)-len(b)+1):
             cnt = False
     if cnt == True:
         index = i
+        exists = True
         break
-print(i)
+if exists == True:
+    print(i)
+else:
+    print(-1)
