@@ -1,4 +1,8 @@
 arr = input()
 n = int(input())
-for i in range(-2,-n-2,-1):
-    print(arr[i],end="")
+if n> len(arr):
+    for i in range(-1,-1*len(arr)-1,-1):
+        print(arr[i],end="")
+else:
+    for i in range(-1,-n-1,-1):
+        print(arr[i],end="")
