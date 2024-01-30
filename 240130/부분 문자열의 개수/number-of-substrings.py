@@ -9,11 +9,7 @@ for i in range(len_a - len_b+1):
     for j in range(len_b):
         if A[i+j] == B[j]:
             cnt +=1
-
-        if A[i+j] != B[j]:
-            exists = False
     if cnt == len_b:
         exists = True
         cnt_b +=1
-if exists == True:
-    print(cnt_b)
+print(cnt_b)
