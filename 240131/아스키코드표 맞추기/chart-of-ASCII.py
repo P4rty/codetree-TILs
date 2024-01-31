@@ -1,0 +1,6 @@
+a,b,c,d,e = map(int,input().split())
+print(chr(a),end=' ')
+print(chr(b),end=' ')
+print(chr(c),end=' ')
+print(chr(d),end=' ')
+print(chr(e),end=' ')
