@@ -1,7 +1,7 @@
 s = input()
 arr = []
 for i in range(len(s)):
-    if s[i] <= '9' and s[i]>= '1':
+    if s[i] <= '9' and s[i]>= '0':
         arr.append(s[i])
     elif s[i] <= 'z' and s[i]>= 'a':
         arr.append(s[i])
