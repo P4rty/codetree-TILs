@@ -9,7 +9,7 @@ def gcdd (n,m):
             if n%i == 0 and m%i ==0:
                 gcd = i
     elif m==n:
-        print(m)
+        gcd = m
     else:
         for i in range(2,n):
             if n%i == 0 and m%i ==0:
