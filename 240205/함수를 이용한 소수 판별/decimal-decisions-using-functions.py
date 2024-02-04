@@ -5,7 +5,7 @@ def is_prime(n):
     return True
 temp = 0 
 a,b = map(int,input().split())
-for i in range(a,b+1):
+for i in range(a,b):
     k = is_prime(i)
     if k == True:
         temp += i
