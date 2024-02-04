@@ -10,7 +10,7 @@ def is_yoonnun(n):
     else:
         return False
 y = int(input())
-if y:
+if is_yoonnun(y):
     print('true')
 else:
     print('false')
