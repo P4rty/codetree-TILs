@@ -1,4 +1,7 @@
 N = int(input())
 num_2N = list(map(int,input().split()))
 num_2N.sort()
-print(num_2N[-1]+num_2N[0])
+f=[]
+for i in range(N):
+    f.append(num_2N[i]+num_2N[-1-i])
+print(max(f))
