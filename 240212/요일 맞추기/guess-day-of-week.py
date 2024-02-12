@@ -6,7 +6,7 @@ m1, d1, m2, d2 = map(int, input().split())
 
 start_day = 0
 elapsed_days = 0
-if m1< m2:
+if m1<= m2 and d1<=d2:
     while True:
         if m1 == m2 and d1 == d2:
             break
