@@ -8,7 +8,7 @@ while (d,e,f) != (a,b,c):
     if f == 60:
         e += 1
         f = 0
-    if e == 24:
-        d += 1
-        e = 0
+        if e == 24:
+            d += 1
+            e = 0
 print(elapsed)
