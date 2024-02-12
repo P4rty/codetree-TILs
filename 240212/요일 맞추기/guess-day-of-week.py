@@ -20,6 +20,7 @@ if m1< m2:
 else:
      while True:
         if m1 == m2 and d1 == d2:
+            elapsed_days -=1
             break
 
         elapsed_days -= 1
@@ -28,6 +29,7 @@ else:
         if d1 ==1:
             m1 -= 1
             d1 = num_of_days[m1]
+
 f = elapsed_days % 7
 
 
