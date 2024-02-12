@@ -1,14 +1,10 @@
-a,b,c = map(int,input().split())
-d,e,f = 11, 11, 11
-elapsed = 0
+a, b, c = map(int, input().split())
+start_time = (11, 11, 11)
+target_time = (a, b, c)
 
-while (d,e,f) != (a,b,c):
-    elapsed += 1
-    f += 1
-    if f == 60:
-        e += 1
-        f = 0
-        if e == 24:
-            d += 1
-            e = 0
-print(elapsed)
+start_minutes = start_time[0] * 24 * 60 + start_time[1] * 60 + start_time[2]
+target_minutes = target_time[0] * 24 * 60 + target_time[1] * 60 + target_time[2]
+
+
+elapsed_minutes = target_minutes - start_minutes
+print(elapsed_minutes)
