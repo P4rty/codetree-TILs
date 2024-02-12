@@ -20,7 +20,6 @@ if m1<= m2 and d1<=d2:
 else:
      while True:
         if m1 == m2 and d1 == d2:
-            elapsed_days -= 1
             break
 
         elapsed_days -= 1
