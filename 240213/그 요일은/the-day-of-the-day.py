@@ -20,7 +20,10 @@ def num_of_days(m, d):
 
 
 total_days = (num_of_days(m2, d2) - num_of_days(m1, d1))
-total_week = total_days //7 
+total_week = total_days //7 + 1
 total_day = total_days % 7
-total_week+=1
-print(total_week)
+if total_day >= f:
+    total_week += 1
+    print(total_week)
+else:
+    print(total_week)
