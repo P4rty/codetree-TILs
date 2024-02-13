@@ -3,7 +3,7 @@ arr = [0]*2001
 idx = 1000
 for i in range(n):
     x,direction = input().split()
-    x = int(x)
+    x = int(x)+1000
     if direction == "L":
         for j in range(idx,x+1):
             arr[j] +=1
@@ -25,4 +25,4 @@ for i in range(len(arr)):
         ck += 1
     if arr [i] != arr[i-1]:
         ck -= 1
-print(ck-1)
+print(ck)
