@@ -1,7 +1,7 @@
+days_week = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 m1,d1,m2,d2 = map(int,input().split())
 A = input()
 
-days_week = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 for i in range(7):
     if A == days_week[i]:
@@ -22,8 +22,11 @@ def num_of_days(m, d):
 total_days = (num_of_days(m2, d2) - num_of_days(m1, d1))
 total_week = total_days //7 + 1
 total_day = total_days % 7
-if total_day >= f:
-    total_week += 1
+
+if days_week.index(A)+1 <= total_day and total_days > 7:
     print(total_week)
+elif total_days < 7:
+    if days_week.index(A)+1 <= total_day:
+        print(1)
 else:
     print(total_week)
