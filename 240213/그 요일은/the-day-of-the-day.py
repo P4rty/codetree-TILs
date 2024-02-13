@@ -13,10 +13,9 @@ def num_of_days(m, d):
     
     return total_days    
 
-total_days_start = num_of_days(m1, d1)
 total_days = (num_of_days(m2, d2) - num_of_days(m1, d1))
 total_week = total_days //7 +1
 start_day_index = days_week.index(A)
 
-occurrences = total_week+ (start_day_index <= (total_days_start % 7))
+occurrences = total_week+ (start_day_index <= (total_days % 7))
 print(occurrences)
