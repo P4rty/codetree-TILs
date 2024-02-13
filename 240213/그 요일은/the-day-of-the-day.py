@@ -24,7 +24,7 @@ total_week = total_days //7 + 1
 total_day = total_days % 7
 
 if days_week.index(A)+1 <= total_day and total_days > 7:
-    print(total_week)
+    print(total_week+1)
 elif total_days < 7:
     if days_week.index(A)+1 <= total_day:
         print(1)
