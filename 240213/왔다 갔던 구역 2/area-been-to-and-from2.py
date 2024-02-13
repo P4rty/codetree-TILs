@@ -3,13 +3,19 @@ arr = [0]*2001
 idx = 1000
 for i in range(n):
     x,direction = input().split()
-    x = int(x)+1000
+    x = int(x)
     if direction == "L":
-        arr[idx:x] = [val + 1 for val in arr[idx:x]]
-        idx = x + 1
+        for j in range(idx-x,idx):
+            arr[j] += 1
+            idx -=1
     elif direction == "R":
-        arr[x:idx] = [val + 1 for val in arr[x:idx]]
-        idx = x
+        for j in range(idx,idx+x):
+            arr[j] += 1
+            idx +=1
 
-ck = sum(1 for val in arr if val >= 2)
-print(ck-1)
+ck = 0
+for i in range(len(arr)):
+    if arr[i] >= 2:
+        ck += 1
+    
+print(ck)
