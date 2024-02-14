@@ -17,5 +17,5 @@ for i in range(1,N):
     else:
         cnt += 1
         if i == N-1 and cnt > maxe:
-            maxe = cnt -1
+            maxe = cnt
 print(maxe)
