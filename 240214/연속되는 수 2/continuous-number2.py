@@ -9,7 +9,7 @@ for i in range(N):
     num = int(input())
     arr.append(num)
 cnt = 1
-fma = 0
+fma = 1
 for i in range(N):
     if arr[i] == arr[i-1]:
         cnt +=1
