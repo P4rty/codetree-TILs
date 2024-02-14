@@ -9,12 +9,12 @@ for i in range(N):
     num = int(input())
     arr.append(num)
 cnt = 1
-fin = []
+fma = 0
 for i in range(N):
     if arr[i] == arr[i-1]:
         cnt +=1
     if arr[i] != arr[i-1]:
-        fin.append(cnt)
+        if cnt > fma :
+            fma = cnt
         cnt = 1
-
-print(max(fin))
+print(fma)
