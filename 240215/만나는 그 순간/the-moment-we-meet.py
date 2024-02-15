@@ -33,8 +33,8 @@ for i in range(m):
         time += t
 
 for j in range(time):
-    if arr_a[j] != arr_b[j]and j == time-1:
-        print(-1)
     if arr_a[j] == arr_b[j]:
         print(j+1)
         break
+    elif j == time-1:
+        print(-1)
