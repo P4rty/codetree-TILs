@@ -3,8 +3,8 @@ def input():
     return sys.stdin.readline().rstrip()
 
 n,m = map(int,input().split())
-arr_a = [0]*1001
-arr_b = [0]*1001
+arr_a = []
+arr_b = []
 distance = 0
 time = 0
 
@@ -14,12 +14,12 @@ for _ in range(n):
     if d == 'L':
         for i in range(time,time+t):
             distance -= 1
-            arr_a[i] = distance
+            arr_a.append(distance)
         time += t
     else:
         for i in range(time,time+t):
             distance += 1
-            arr_a[i] = distance
+            arr_a.append(distance)
         time += t
 distanceb = 0
 time = 0
@@ -29,12 +29,12 @@ for i in range(m):
     if d == 'L':
         for i in range(time,time+t):
             distanceb -= 1
-            arr_b[i] = distanceb
+            arr_b.append(distanceb)
         time += t
     else:
         for i in range(time,time+t):
             distanceb += 1
-            arr_b[i] = distanceb
+            arr_b.append(distanceb)
         time += t
 
 for j in range(time):
