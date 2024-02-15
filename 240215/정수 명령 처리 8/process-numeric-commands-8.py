@@ -123,7 +123,7 @@ for _ in range(N):
     elif s == 'size':
         print(l.size())
     elif s == 'empty':
-        print(l.empty())
+        print(int(l.empty()))
     elif s == 'front':
         print(l.front())
     elif s == 'back':
