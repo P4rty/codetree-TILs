@@ -1,8 +1,13 @@
+import sys
+def input():
+    return sys.stdin.readline().rstrip()
+
 n,m = map(int,input().split())
 arr_a = [0]*1001
 arr_b = [0]*1001
 distance = 0
 time = 0
+
 for _ in range(n):
     d,t = input().split()
     t = int(t) 
