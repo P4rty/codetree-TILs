@@ -8,7 +8,7 @@ pos_b = [0]*1000001
 time = 1
 for i in range(n):
     v,t = map(int,input().split())
-    for i in range(time,time+t):
+    for j in range(time,time+t):
         pos_a[i] += v
     time +=t
 
@@ -17,20 +17,23 @@ for i in range(n):
 time = 1
 for i in range(m):
     v,t = map(int,input().split())
-    for i in range(time,time+t):
+    for j in range(time,time+t):
         pos_b[i] += v
     time +=t
 arr = []
 direction = 1
 for k in range(1,time+1):
-    if pos_a[k] >= pos_b[k]:
+    if pos_a[k] > pos_b[k]:
         direction = 1
         arr.append(direction)
     elif pos_a[k] < pos_b[k]:
         direction = -1
         arr.append(direction)
-cnt = -1
+    elif pos_a[k] == pos_b[k]:
+        direction == 0
+        arr.append(direction)
+cnt = 0
 for k in range(1,len(arr)):
-    if arr[k] != arr[k-1]:
+    if arr[k] != arr[k-1] and arr[k] != 0 :
         cnt+=1
 print(cnt)
