@@ -10,5 +10,6 @@ for i in range(m):
     if studentscore[s] >= k:
         cnt +=1
         print(s)
+        break
 if cnt == 0 :
     print(-1)
