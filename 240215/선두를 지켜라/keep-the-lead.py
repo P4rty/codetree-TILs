@@ -34,13 +34,13 @@ for i in range(m):
 arr = []
 direction = 1
 for k in range(1,time+1):
-    if pos_a[k] >= pos_b[k]:
+    if pos_a[k] > pos_b[k]:
         direction = 1
         arr.append(direction)
     elif pos_a[k] < pos_b[k]:
         direction = -1
         arr.append(direction)
-cnt = -1
+cnt = 0
 for k in range(1,len(arr)):
     if arr[k] != arr[k-1]:
         cnt+=1
