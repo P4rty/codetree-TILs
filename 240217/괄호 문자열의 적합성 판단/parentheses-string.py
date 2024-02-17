@@ -1,16 +1,15 @@
 s = list(input())
-arr = []
+top = 0
 for i in range(len(s)):
     if s[i] == '(':
-        arr.append(1)
+        top += 1
     else:
-        if len(arr) != 0 :
-            arr.pop()
-        else:
-            arr.append(2)
-            break
+        top -= 1
+        if top < 0:
+            print("No")
+            exit(0)
 
-if len(arr) != 0:
+if top != 0:
     print("No")
 else:
     print("Yes")
