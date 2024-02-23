@@ -3,7 +3,7 @@ arr = list(map(int,input().split()))
 max_val = 0
 for i in range(0,n-k):
     sum_some = 0
-    for j in range(i,i+k):
+    for j in range(i,i+k+1):
         sum_some += arr[j]
     max_val = max(max_val,sum_some)
 print(max_val)
