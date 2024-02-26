@@ -7,10 +7,10 @@ for i in range(n):
         length = 0
         for k in range(i,j+1):
             avg_min += arr[k]
-            length +=1
-        avg_min = avg_min//length
-        for k in range(length):
-            if avg_min == arr[k]:
+            length += 1
+        avg_min = avg_min/length
+        for k in range(i,j+1):
+            if arr[k] == avg_min:
                 cnt +=1
                 break
-print(cnt-1)
+print(cnt)
