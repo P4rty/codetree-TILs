@@ -11,7 +11,8 @@ for i in range(n-1):
         cnt = False
 if cnt == True and a[n-1] == 1:
     a[n-1] = 0
-
+else:
+    a[n-1] = 1
 dec = 0
 for i in range(n-1):
     dec += 2**(n-1-i)
