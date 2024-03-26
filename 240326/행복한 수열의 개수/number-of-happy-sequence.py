@@ -26,9 +26,9 @@ for i in range(n):
             cnt_col += 1
         if arr[j][i] == arr[j+1][i] and cnt_col == m:
             break
-        if arr[j][i] == arr[j+1][i] and cnt_col < m:
+        if arr[j][i] != arr[j+1][i] and cnt_col < m:
             cnt_col = 1
-        if arr[j][i] == arr[j+1][i] and cnt_col == m:
+        if arr[j][i] != arr[j+1][i] and cnt_col == m:
             break
     if cnt_col >= m:
         cnt += 1
